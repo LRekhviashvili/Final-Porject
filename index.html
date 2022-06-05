@@ -11,15 +11,51 @@
     
 </head>
 <body>
-<section> 
+    <header>
+        <div class="navbar-wraper"> 
+            <div class="logo">
+            <i class="fa-solid fa-clapperboard"></i></div>
+   
+         <nav class="navbar" id="navbarlinks">
+          <ul class="ul-list">
+              <li class="li-text">
+                  <a class="li-text" href="#background-image1">Main</a>
+              </li>
+              <li class="li-text">
+                  <a class="li-text"href="#accordion-wraper">Portfolio</a>
+              </li>
+              <li class="li-text">
+                  <a class="li-text"href="#form-wraper">Subscribe</a>
+              </li>
+            <li class="li-text">
+                <a class="li-text"href="#footer">Contact</a>
+            </li>
+          </ul>
+       
+         </nav>
+         <div class="toggle-button" id="toggleBurger">
+           <div class="burger-bar" id="top-bar"></div> 
+           <div class="burger-bar" id="middle-bar"></div> 
+           <div class="burger-bar" id="bottom-bar"></div> 
+         </div>
+        </div>
+   
+       </header>
+       <section>
+        <div class="slider-wraper">
+            <button class="arrow arrow-left" id="arrow-left"><i class="fa-solid fa-arrow-right"></i></button>
+            <button class="arrow arrow-right" id="arrow-right"><i class="fa-solid fa-arrow-left"></i> </button>
+            <div class="slider-content" id="slider-content">
+            </div>
+        </section>
+
+<!-- <section> 
     <div class="background-image1"> 
         <div class="Background-Title-Box"> 
-            <h1 class="Background-Title">"ნეტავი, იქ თეატრი არის?"</h1>
+            <h1 class="Background-Title">"Will There Be a Theatre up There?"</h1>
         </div>
         <div class="Background-p">  
-            <p>Lorem ipsum dolor sit amet, consetetur 
-                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. 
+            <p>Talent is not enough to deserve universal love from people; neither is high-quality professionalism or artistry nor appealing, wonderful human traits or dignity. You have to be a beholder of something more than that or something uniting all of these
                 At vero eos et accusam</p>
         </div>
         <div class="path-box1">
@@ -42,10 +78,127 @@
         </div>
     </div>
     </div>
+</section> -->
+<section class="actors"> 
+    <div id="api-user-email">
+        <ul id="ul-list"></ul>
+    </div>
+    <div class="buttons">
+        <button id="Previouspage"> Load Previous Page </button>
+        <button id="Nextpage"> Load Next Page </button>
+    </div>
 </section>
 
+<section id="accordion-wraper">
+    <div class="wraper-body">
+        <div class="accordion">
+        <h2 class="Wraper-title">Portfolio</h2>
+        <div class="container">
+            <h3 class="accordion-title">Sherekilebi</h3>
+            <div class="accordion-content"> 
+            <img class="sherekilebi"src="Images/sherekilebi.jpg" alt="image">
+            <p class="accoridon-description">In the pursuit of happiness orphan Ertaoz left for city, where he fell 
+                in love with pretty Margalita and went to jail to save her. There he met his future teacher Qristepore 
+                who dreamed of building flying machine and they broke the prison.</p>
+            </div>
+            </div>
+    
+        <div class="container">
+            <h3 class="accordion-title">Item 2</h3>
+            <p class="accoridon-description">In the pursuit of happiness orphan Ertaoz left for city, where he fell in love with pretty Margalita and went to jail to save her. There he met his future teacher Qristepore who dreamed of building flying machine and they broke the prison.lphanumeric text to include multimedia messages using the Multimedia Messaging Service (MMS) containing digital images, videos, and sound content, as well as ideograms known as emoji (happy faces, sad faces, and other icons), and instant messenger applications (usually the term is used when on mobile devices).</p>
+        </div>
+    
+        <div class="container">
+            <h3 class="accordion-title">Item 3</h3>
+            <p class="accoridon-description">Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices, desktops/laptops, or another type of compatible computer. Text messages may be sent over a cellular network, or may also be sent via an Internet connection.
+    
+                The term originally referred to messages sent using the Short Message Service (SMS). It has grown beyond alphanumeric text to include multimedia messages using the Multimedia Messaging Service (MMS) containing digital images, videos, and sound content, as well as ideograms known as emoji (happy faces, sad faces, and other icons), and instant messenger applications (usually the term is used when on mobile devices).</p>
+        </div>
+    
+        </div>
+        </div>
 
+</section>
 
+<section id="form-wraper">
+    <div class="formBlock" id="formBlock">        
+        <form action="" method="POST" class="mainForm" id="mainForm">
+            <h3 class="form-title">Subscribe </h3>
+
+            <label for="companyTitle" class=""> Name and Surname </label>
+            <input type="text" class="" id="companyTitle" name="companyTitle" placeholder="Service Title">
+            <span class="error-text"  id="error_companyTitle"></span>
+
+            <label for="companyDescription" class="">Comment</label>
+            <textarea name="companyDescription" class="" id="companyDescription" cols="30" rows="6" placeholder="Company Description"></textarea>
+            <span class="error-text" id="error_companyDescription"></span>
+
+            <h3> Select the information you would like to receieve on a regular basis. </h3>
+            <div class="checkboxDiv" id="checkboxDiv">
+                <div class="checkbox-div" id="quality">
+                    <input type="checkbox" id="qualityInput" name="choise1">
+                    <label for="checkAgree">Articles</label>
+                </div>
+
+                <div class="checkbox-div" id="realiable">
+                    <input type="checkbox" id="realiableInput" name="choise2">
+                    <label for="choise">News</label>
+                </div>
+
+                <div class="checkbox-div" id="unique">
+                    <input type="checkbox" id="uniqueInput" name="choise3">
+                    <label for="choise">Visual Materila</label>
+                    <span class="error-text" id="error_quality"></span>
+                </div>
+            </div>
+            <div class="email-div">
+                <label for="email"> Enter your email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" onkeydown="validation()">
+                <span class="error-text" id="error_email"></span>
+            </div>
+
+            <div >
+                <label for=""> Enter Password:</label>
+                <input type="password" name="password" id="password" placeholder="Your Password">
+                <i id="toggleIcon" class="fa-solid fa-eye"></i>
+                <span class="error-text" id="error_password"></span>
+            </div>
+            <div >
+                <label for=""> Repeat Password: </label>
+                <input type="password" name="password1" id="password1" placeholder="Your Password">
+                <span class="error-text" id="error_password1"></span>
+            </div>
+            <div class="saveButtons" class="" >
+                <Button class="saveButton" id="">Send</Button>
+            </div>
+        </form>
+    
+
+</section>
+
+<footer class="footer" id="footer">
+    <div class="path-box1">
+        <img src="Images/Path 23.png" alt="path">
+    </div>
+<div class="socialmedia-icons-footer">
+    <i class="fa-brands fa-facebook-square"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-twitter-square"></i>
+    <i class="fa-brands fa-spotify"></i>
+</div>
+<p>
+ USEFUL LINKS
+Inkscape
+What is SVG
+SVG Edit
+Draw SVG
+SVG Logo
+ABOUT US
+FreeSVG.org offers free vector images in SVG format with Creative Commons 0 license (public domain). You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
+It is absolutely not required, but if you like this website, any mention of or link back is highly appreciated.
+</p>
+</footer>
 
     <script src="script.js"></script>
 </body>
