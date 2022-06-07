@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
@@ -22,7 +25,10 @@
                   <a class="li-text" href="#background-image1">Main</a>
               </li>
               <li class="li-text">
-                  <a class="li-text"href="#accordion-wraper">Portfolio</a>
+                <a class="li-text"href="#slider">Movies</a>
+            </li>
+              <li class="li-text">
+                  <a class="li-text"href="#accordion-wraper">Quotoes</a>
               </li>
               <li class="li-text">
                   <a class="li-text"href="#form-wraper">Subscribe</a>
@@ -41,21 +47,14 @@
         </div>
    
        </header>
-       <section>
-        <div class="slider-wraper">
-            <button class="arrow arrow-left" id="arrow-left"><i class="fa-solid fa-arrow-right"></i></button>
-            <button class="arrow arrow-right" id="arrow-right"><i class="fa-solid fa-arrow-left"></i> </button>
-            <div class="slider-content" id="slider-content">
-            </div>
-        </section>
 
-<!-- <section> 
+<section id="background-image1"> 
     <div class="background-image1"> 
         <div class="Background-Title-Box"> 
             <h1 class="Background-Title">"Will There Be a Theatre up There?"</h1>
         </div>
         <div class="Background-p">  
-            <p>Talent is not enough to deserve universal love from people; neither is high-quality professionalism or artistry nor appealing, wonderful human traits or dignity. You have to be a beholder of something more than that or something uniting all of these
+            <p class="p">Talent is not enough to deserve universal love from people; neither is high-quality professionalism or artistry nor appealing, wonderful human traits or dignity. You have to be a beholder of something more than that or something uniting all of these
                 At vero eos et accusam</p>
         </div>
         <div class="path-box1">
@@ -78,7 +77,104 @@
         </div>
     </div>
     </div>
-</section> -->
+
+</section>
+<section id="slider"> 
+<div class="carousel">
+    <button class='flt-left' onclick="slideRight(this);"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+    <div class="row flt-left">
+      
+     <div class="row-container">
+    <div class="container">
+      <img class="img" src="Images/sherekilebi.jpg" />
+    </div>
+    <div class="container">
+      <img class="img"src="Images/veris.jpg" />
+    </div>
+    <div class="container">
+      <img class="img"src="Images/abezara.jpg" />
+    </div>
+        <div class="container">
+      <img class="img"src="Images/shvilebi.jpg " />
+    </div>
+       <div class="container">
+      <img class="img"src="Images/londre.jpg" />
+    </div>
+       <div class="container">
+      <img class="img"src="Images/see.jpg" />
+    </div>
+      <div class="img"class="clear"></div>
+      </div>
+     
+      </div>
+     <button class='flt-left'  onclick="slideLeft(this);"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      <div class="clear"></div>
+  </div>
+</section>
+
+<section id="accordion-wraper">
+    <div class="wraper-body">
+        <div class="accordion">
+        <h2 class="Wraper-title">Interesting Facts Georgian Theatre and Movie</h2>
+        <div class="container-accordion">
+            <h3 class="accordion-title">Introduction</h3>
+            <div class="accordion-content"> 
+            <p class="accoridon-description">The very fact that Georgians adore art can't be debated. 
+                Can you imagine that the first theatre in Georgia was established in the second century B.C.? 
+                Yes, I agree. It was very long time ago. It happened next to Gori, in the ancient town that was 
+                carved in a rock and was called Uplistsikhe.
+                Once, Uplistsikhe was extremely developed town that was located on the Silk Road. 
+                One can see more than 100 rooms and halls, main street and the remnants of the plumbing there. 
+                But, the main and the most amazing attraction are the scene and the big hall of the ancient theatre.
+                Much time has passed since then. Nobody gives performances at Uplistsikhe theatre. 
+                Though, Georgia definitely doesn't experience the lack of theatres. More than that, we're very pr
+                oud of the diversity of our theatres. If you're in Tbilisi make sure you visit Z. Paliashvili Opera and 
+                Ballet State Theatre at Rustaveli Avenue. Building is decorated in Mauritian style. Narrow columns and beautiful 
+                ornaments make theatre incredibly wonderful. Other must-visits are:
+                Marjanishvili State Academic Drama Theatre;
+                Shota Rustaveli State Academic Drama Theatre;
+                Sandro Akhmeteli State Drama Theatre;
+                Alexander Griboedov state academic Russian drama theatre;
+                 Vaso Abashidze State Music and Comedy Theatre and etc..</p>
+            </div>
+            </div>
+    
+        <div class="container-accordion">
+            <h3 class="accordion-title">History</h3>
+            <div class="accordion-content"> 
+            <p class="accoridon-description">As for Georgian cinema, its history begins in 1896. 
+                On 16 October that year the first Georgian cinema was established. 
+                Then in 1912 Vasil Amasukeli filmed first Georgian movie: "Akaki Tsereteli Trip to Racha-lechkhumi". 
+                It was documentary based on a real story. Later, in 1916 Alexandre Tsutsunava filmed "Kristine".
+                Lots of movies have been filmed since then.  Here is the short list of famous representatives of 
+                Georgian Cinematography:  Nikoloz Shengelaia, Mikheil Chiaureli, Otar Ioseliani, Sico Dolidze, Kote Mikaberidze, 
+                Tengiz Abuladze, Revaz Chkheidze, Alexandre Rekhviashvili, Eldar and Giorgi Shengelaia, Rezo Esadze, 
+                Merab Kokochashvili, Nana Mchedlidze, Lana Ghoghoberidze, Nana Jorjadze, Mikheil Kobahidze, Goderdzi Chokheli, 
+                Temur Babluani, etc.
+                </p>
+                </div>
+        </div>
+    
+        <div class="container-accordion">
+            <h3 class="accordion-title"> Trends and Challenges of Georgian Theatre Today</h3>
+            <div class="accordion-content"> 
+            <p class="accoridon-description">Keywords: Georgia, theatre, festivals, research,
+                statistics, young directors
+                Georgia is a small country at the crossroads of Europe and Asia; indeed, 
+                the country sat, famously, at an important juncture on the great Silk Roads. 
+                It boasts of 8,000 vintages of wine, 3,000 years of statehood, saturated with a great number 
+                of wars and struggles for survival; a 1,500-year-old capital and a literature of the same age, 
+                written in the same language, using three different scripts; and a very distinctive culture that 
+                reflects the combination of winemaking, wars, language, literature and crossroads.
+                Being at the crossroads, Georgia adopted the experience from the East and the West alike. 
+                Georgian poetry, for instance, borrows distinctly eastern forms of versification to convey 
+                strikingly western ideals and philosophy.</p></div>
+        </div>
+    
+        </div>
+        </div>
+
+</section>
 <section class="actors"> 
     <div id="api-user-email">
         <ul id="ul-list"></ul>
@@ -88,38 +184,6 @@
         <button id="Nextpage"> Load Next Page </button>
     </div>
 </section>
-
-<section id="accordion-wraper">
-    <div class="wraper-body">
-        <div class="accordion">
-        <h2 class="Wraper-title">Portfolio</h2>
-        <div class="container">
-            <h3 class="accordion-title">Sherekilebi</h3>
-            <div class="accordion-content"> 
-            <img class="sherekilebi"src="Images/sherekilebi.jpg" alt="image">
-            <p class="accoridon-description">In the pursuit of happiness orphan Ertaoz left for city, where he fell 
-                in love with pretty Margalita and went to jail to save her. There he met his future teacher Qristepore 
-                who dreamed of building flying machine and they broke the prison.</p>
-            </div>
-            </div>
-    
-        <div class="container">
-            <h3 class="accordion-title">Item 2</h3>
-            <p class="accoridon-description">In the pursuit of happiness orphan Ertaoz left for city, where he fell in love with pretty Margalita and went to jail to save her. There he met his future teacher Qristepore who dreamed of building flying machine and they broke the prison.lphanumeric text to include multimedia messages using the Multimedia Messaging Service (MMS) containing digital images, videos, and sound content, as well as ideograms known as emoji (happy faces, sad faces, and other icons), and instant messenger applications (usually the term is used when on mobile devices).</p>
-        </div>
-    
-        <div class="container">
-            <h3 class="accordion-title">Item 3</h3>
-            <p class="accoridon-description">Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices, desktops/laptops, or another type of compatible computer. Text messages may be sent over a cellular network, or may also be sent via an Internet connection.
-    
-                The term originally referred to messages sent using the Short Message Service (SMS). It has grown beyond alphanumeric text to include multimedia messages using the Multimedia Messaging Service (MMS) containing digital images, videos, and sound content, as well as ideograms known as emoji (happy faces, sad faces, and other icons), and instant messenger applications (usually the term is used when on mobile devices).</p>
-        </div>
-    
-        </div>
-        </div>
-
-</section>
-
 <section id="form-wraper">
     <div class="formBlock" id="formBlock">        
         <form action="" method="POST" class="mainForm" id="mainForm">
@@ -187,17 +251,19 @@
     <i class="fa-brands fa-twitter-square"></i>
     <i class="fa-brands fa-spotify"></i>
 </div>
-<p>
- USEFUL LINKS
-Inkscape
-What is SVG
-SVG Edit
-Draw SVG
-SVG Logo
-ABOUT US
-FreeSVG.org offers free vector images in SVG format with Creative Commons 0 license (public domain). You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
-It is absolutely not required, but if you like this website, any mention of or link back is highly appreciated.
-</p>
+<div class="footer-box">
+    <div class="links">
+        <a class="link-text"href="#">Blogs</a>
+        <a class="link-text"href="#">Articles</a>
+        <a class="link-text"href="#">Magazines</a>
+        <a class="link-text"href="#">TV</a>
+        <a class="link-text"href="#">Music</a>
+        <a class="link-text"href="#">Movies</a>
+        <a class="link-text"href="#">Videos</a>
+    </div>
+
+    <div class="credit">created by <span>Lika Rekhviashvili</span></div>
+
 </footer>
 
     <script src="script.js"></script>

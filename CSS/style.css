@@ -2,6 +2,9 @@
     width: 100%;
     background-color: #070606;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .background-image1 {
     background-image: url("../Images/Kakhi.jpg");
@@ -14,13 +17,19 @@
     width: 100%;
     text-align:left;
     position: absolute;
-    top: 50%;
-    left: 3%;
+    top: 25%;
+    left: 2%;
     color: white;
+    cursor: pointer;
 }
 .Background-Title{
-    color: aliceblue;
+    color: rgb(226, 214, 176);
     font-size: 30px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 20px;
 }
 .Background-p{
     max-width: 350px;
@@ -30,6 +39,10 @@
     top: 60%;
     left: 3%;
     color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    padding-top: 20px;
 }
 .path-box1{
     width: 100%;
@@ -54,7 +67,6 @@
 }
 .fa-brands:hover{
     color: rgb(177, 47, 47);
-    
 }
 
 .background-right-title-box{
@@ -196,6 +208,9 @@ fa-clapperboard{
     } 
 }
 /* form */
+#form-wraper{
+    padding-top: 50px;
+}
 .mainForm{
     max-width: 600px;
     width: 100%;
@@ -203,8 +218,9 @@ fa-clapperboard{
     flex-direction: column;
     margin: 100px auto;
     color: rgb(217, 233, 225);
-    background-image: linear-gradient(to bottom right, rgba(0, 133, 60, 0.833), rgb(255, 0, 64)); 
+    background-image: linear-gradient(to bottom right, rgba(107, 27, 7, 0.833), rgb(90, 78, 81)); 
     padding: 2rem;    
+    cursor: pointer;
 }
 
 .error-text{
@@ -213,7 +229,7 @@ fa-clapperboard{
     margin-bottom: 25px;
 }
 #toggleIcon{
-    color: rgb(142, 212, 255);
+    color: rgb(114, 116, 117);
 }
 .saveButtons{
     text-align: center;
@@ -226,7 +242,8 @@ fa-clapperboard{
     border: none;
 }
 .saveButton:hover{
-    background-color: rgb(210, 254, 187);
+    background-color: rgb(240, 185, 83);
+    text-align: center;
 }
 #password,
 #password1,
@@ -245,27 +262,28 @@ fa-clapperboard{
 
 /* accordion */
 #accordion-wraper{
-    margin-top: 50px;
+    margin-top: 100px;
+    
 }
 .accordion{
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(253, 253, 251);
+    background-color: rgb(24, 24, 17);
 }
 
-.container{
+.container-accordion{
     position: relative;
-    background-color: #35320b; 
+    background-color: #aeaf86; 
     margin-bottom: 20px;
-    padding-bottom: 20px;
 }
 
 .accordion-title{
     position: relative;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
-    font-size: xx-large;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .accordion-title::before {
     content: "+";
@@ -277,8 +295,10 @@ fa-clapperboard{
 }
 .Wraper-title{
     font-size: xx-large;
-    color: #470808; 
+    color: #998a8a; 
     padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 .accoridon-description{
     width: 100%;
@@ -290,17 +310,11 @@ fa-clapperboard{
     text-align: center;
     margin: 20px;
 }
-.container.active .accoridon-description{
-  height: 150px;
-  padding-top: 50px;
+.container-accordion.active .accoridon-description{
+  height: 200px;
+  padding-top: 20px;
 }
-.sherekilebi{
-    /* height: 0; */
-    overflow: hidden;
-    display: none;
-    position: relative; 
-    margin-left: 20px;
-}
+
 .accordion-content{
     width: 100%;
     display: flex;
@@ -308,18 +322,18 @@ fa-clapperboard{
     justify-content: space-evenly;
     transition: all;
 }
-.container.active .sherekilebi{
+.container-accordion.active .sherekilebi{
   display: block;
   transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.container.active .accordion-title::before{
+.container-accordion.active .accordion-title::before{
     content: "-";
     font-size: 30px;
 }
 /* server */
 #ul-list {
-    color: rgb(232, 252, 122);
+    color: rgb(134, 143, 86);
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -327,7 +341,7 @@ fa-clapperboard{
     grid-gap: 60px;
 }
 .li-item {
-   background-color: rgb(133, 218, 252);
+    background-color: rgb(23, 27, 1);
    text-align: center;
    width: 200px;
 }
@@ -346,11 +360,11 @@ fa-clapperboard{
     height: 50px;
     outline: 0;
     border: 1px solid rgb(59, 55, 55);
-    background-color: aqua;
+    background-color: rgb(23, 27, 1);
     cursor: pointer;
 }
 #Previouspage:hover{
-    background-color:rgb(4, 100, 100);
+    background-color:rgb(48, 27, 3);
     transition: 0.5s;
 }
 
@@ -359,7 +373,7 @@ fa-clapperboard{
     height: 50px;
     outline: 0;
     border: 1px solid rgb(59, 55, 55);
-    background-color: aqua;
+    background-color: rgb(23, 27, 1);
     cursor: pointer;
 }
 
@@ -369,6 +383,7 @@ fa-clapperboard{
 }
 .actors{
     padding-top: 50px;
+    margin-left: 30px;
 }
 .footer{
     width: 100%;
@@ -384,72 +399,85 @@ fa-clapperboard{
   justify-content: center;
   padding-top: 20px;
   gap: 10px;
-  
+}
+.links{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 5px;
+    justify-content: space-around;
+   
+} 
+ .credit{
+        font-size: medium;
+        color:#fff;
+        font-weight: lighter;
+        padding:1.5rem;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link-text{
+    color: #b48989;
+    font-weight: bold;
+    cursor: pointer;
 }
 
+
 /* slider */
-.slider-wraper {
-    position: relative;
+
+  .flt-left{
+    float:left;
+  }
+  .carousel{
+    width:100%;
+    margin-left: 40px;
+    padding-top: 100px;
+  }
+  .row{
+    width:90%;
+    padding:0;
+    overflow:hidden;
+    margin:auto;
+  }
+  .row-container{
+    width:2000px;
+    transition:0.5s;
+    background-color: #070606;
+  }
+  .container{
+    width:250px;
+    float:left;
+    display:inline;
+    margin:0 5px;
+    background-color: #130f0f;
+    align-items: center;
+    opacity: 70%;
+  }
+  .clear{
+    clear:both;
+  }
+  .controls{
+    width:100%;
+    margin:auto;
+  }
+  button{
+    border:none;
+    padding:10px 20px;
+    color:white;
+    background:#21252b;
+    font-weight:bold;
+    outline:none;
+    border-radius:3px;
+    height:200px;
+    position:relative;
+  }
+  .img{
+    max-width: 240px;
     width: 100%;
+    height: 80%;
   }
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(218, 236, 111);
-    color: #fff;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    transition: all, 0.5s;
-  }
-  .arrow:hover{
-    transform: scale(1.2);
-  }
-  .arrow-left {
-    left: 80%
-  }
-  .arrow-right {
-    right: 80%;
-  }
-  
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 22px 22px; 
-    background-color: rgb(179, 102, 102);
-    border-radius: 50%;
-    display: inline-block; 
-    transition: background-color 0.6s ease;
-    cursor: pointer;
-  }
-  
-  .dots {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-  }
-  
-  .imgdiv{
-   background-repeat: no-repeat;
-   background-size: coontain;
-   max-width: 1000px;
-   width: 100%;
-   height: 500px;
-   margin: 0 auto;
-   margin-top: 50px;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
