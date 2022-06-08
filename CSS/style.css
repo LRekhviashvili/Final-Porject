@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 .body, html{
     width: 100%;
     background-color: #070606;
@@ -52,22 +59,33 @@
 .socialmedia-icons-box{
     max-width: 200px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: absolute;
     bottom: 10%;
     left: 3%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1%;
 }
 .fa-brands{
     color: aliceblue;
     cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
 }
 .fa-brands:hover{
     color: red;
     cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
 }
 
@@ -75,6 +93,8 @@
 .fa-solid{
     color: rgb(240, 243, 247);
     cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
     margin-top: 20px;
     font-size: large;
@@ -98,7 +118,9 @@ fa-clapperboard{
 .toggle-button{
     position: absolute;
     top:30px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 10px;
     display: none;
     cursor: pointer;
@@ -109,21 +131,37 @@ fa-clapperboard{
     background-color: #f7dac3;
     margin-top: 5px;
     border-radius: 7px;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
     transition: 0.5s linear;
     cursor: pointer;
 }
 .ul-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 30px;
     margin-right: 30px;
     padding-top: 20px;
 }
 .navbar-wraper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
     width: 100%;
     height: 50px;
@@ -141,6 +179,8 @@ fa-clapperboard{
 
 .li-text:hover{
     color: rgb(177, 47, 47);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
 }
 
@@ -149,15 +189,25 @@ fa-clapperboard{
         display: block;
     }
     .navbar-wraper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         
     }
     .ul-list{
-     flex-direction: row;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: row;
+             flex-direction: row;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
      align-items: center;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: space-around;
+     -ms-flex-pack: distribute;
+         justify-content: space-around;
         
     }
     .navbar{
@@ -171,13 +221,21 @@ fa-clapperboard{
         
     }
     .burger-bar.top{
-        transform: rotate(-45deg) translate(-6px, 0px);
+        -webkit-transform: rotate(-45deg) translate(-6px, 0px);
+            -ms-transform: rotate(-45deg) translate(-6px, 0px);
+                transform: rotate(-45deg) translate(-6px, 0px);
+        -webkit-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
         transition: 0.5s linear;
         max-width: 30px;
         height: 3px;
     }
     .burger-bar.bottom{
-        transform: rotate(45deg) translate(-6px, 0px);
+        -webkit-transform: rotate(45deg) translate(-6px, 0px);
+            -ms-transform: rotate(45deg) translate(-6px, 0px);
+                transform: rotate(45deg) translate(-6px, 0px);
+        -webkit-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
         transition: 0.5s linear;
         max-width: 30px;
         height: 3px;
@@ -202,10 +260,17 @@ fa-clapperboard{
 .mainForm{
     max-width: 600px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 100px auto;
     color: rgb(217, 233, 225);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(107, 27, 7, 0.833)), to(rgb(90, 78, 81)));
+    background-image: -o-linear-gradient(top left, rgba(107, 27, 7, 0.833), rgb(90, 78, 81));
     background-image: linear-gradient(to bottom right, rgba(107, 27, 7, 0.833), rgb(90, 78, 81)); 
     padding: 2rem;    
     cursor: pointer;
@@ -290,7 +355,9 @@ fa-clapperboard{
     content: "+";
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 20px;
     font-size: 30px;
 }
@@ -307,6 +374,8 @@ fa-clapperboard{
     height: 0;
     overflow: hidden;
     position: relative;
+    -webkit-transition: 0.7s linear;
+    -o-transition: 0.7s linear;
     transition: 0.7s linear; 
     text-align: center;
     margin: 20px;
@@ -318,13 +387,24 @@ fa-clapperboard{
 
 .accordion-content{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transition: all;
+    -o-transition: all;
     transition: all;
 }
 .container-accordion.active .sherekilebi{
   display: block;
+  -webkit-transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -335,10 +415,15 @@ fa-clapperboard{
 /* server */
 #ul-list {
     color: rgb(134, 143, 86);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-gap: 60px;
 }
 .li-item {
@@ -350,11 +435,16 @@ fa-clapperboard{
     width: 100%;
 }
 .buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 70px;
     gap: 50px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 #Previouspage{
     width: 200px;
@@ -366,6 +456,8 @@ fa-clapperboard{
 }
 #Previouspage:hover{
     background-color:rgb(48, 27, 3);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -380,6 +472,8 @@ fa-clapperboard{
 
 #Nextpage:hover{
     background-color:rgb(4, 100, 100);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .actors{
@@ -389,26 +483,40 @@ fa-clapperboard{
 .footer{
     width: 100%;
     background: rgb(17,16,16);
+    background: -o-linear-gradient(338deg, rgba(17,16,16,1) 0%, rgba(119,54,23,0.40940126050420167) 0%, rgba(17,16,16,1) 0%, rgba(17,16,16,1) 100%);
     background: linear-gradient(112deg, rgba(17,16,16,1) 0%, rgba(119,54,23,0.40940126050420167) 0%, rgba(17,16,16,1) 0%, rgba(17,16,16,1) 100%);
     height: 200px;
 }
 
 /* footer */
 .socialmedia-icons-footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 20px;
   gap: 10px;
 }
 .links{
     text-decoration: none;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-top: 30px;
     gap: 5px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
    
 } 
  .credit{
@@ -418,9 +526,16 @@ fa-clapperboard{
         padding:1.5rem;
 }
 .footer-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .link-text{
     color: #b48989;
@@ -447,6 +562,8 @@ fa-clapperboard{
   }
   .row-container{
     width:2000px;
+    -webkit-transition:0.5s;
+    -o-transition:0.5s;
     transition:0.5s;
     background-color: #070606;
   }
@@ -456,7 +573,9 @@ fa-clapperboard{
     display:inline;
     margin:0 5px;
     background-color: #130f0f;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     opacity: 70%;
   }
   .clear{
