@@ -66,40 +66,12 @@
     transition: 0.5s all;
 }
 .fa-brands:hover{
-    color: rgb(177, 47, 47);
+    color: red;
+    cursor: pointer;
+    transition: 0.5s all;
 }
 
-.background-right-title-box{
-    max-width: 400px;
-    width: 100%;
-    position: absolute;
-    top: 30%;
-    right: 4%;
-    color: white;
-    text-align: center;
-}
-.background-right-title{
-    font-size: xx-large;
-}
-.background-right-text{
-    font-size: medium;
-    margin-top: 20px;
-    color: aliceblue;
-}
-.background-music{
-    max-width: 200px;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    background-color: #707070; 
-    text-align: center;
-    border-radius: 45px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-}
+
 .fa-solid{
     color: rgb(240, 243, 247);
     cursor: pointer;
@@ -156,7 +128,7 @@ fa-clapperboard{
     width: 100%;
     height: 50px;
     background-color: #080502;
-    /* position: fixed; */
+    position: fixed;
     opacity: 60%;
 }
 
@@ -178,10 +150,14 @@ fa-clapperboard{
     }
     .navbar-wraper{
         flex-direction: column;
+        
     }
     .ul-list{
-     flex-direction: column;
+     flex-direction: row;
      align-items: center;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
         
     }
     .navbar{
@@ -206,7 +182,19 @@ fa-clapperboard{
         max-width: 30px;
         height: 3px;
     } 
+    .Background-Title-Box{
+        max-width: 200px;
+        width: 100%;
+        text-align:left;
+        position: absolute;
+        top: 30%;
+        left: 2%;
+        color: white;
+        cursor: pointer;
+    }
+  
 }
+
 /* form */
 #form-wraper{
     padding-top: 50px;
@@ -259,6 +247,19 @@ fa-clapperboard{
     margin-bottom: 15px;
     text-align: center;
 }
+@media (max-width: 768px){
+    .mainForm{
+    max-width: 400px;
+    width: 100%;
+    }
+}
+@media (max-width: 400px){
+    .mainForm{
+    max-width: 270px;
+    width: 100%;
+    }
+}
+    
 
 /* accordion */
 #accordion-wraper{
@@ -481,3 +482,14 @@ fa-clapperboard{
     width: 100%;
     height: 80%;
   }
+
+  @media (max-width: 1235px){
+    .img{
+        max-width: 200px;
+        width: 100%;
+        height: 80%;
+    }
+    .carousel{
+        width: 1000px;
+    }
+}
